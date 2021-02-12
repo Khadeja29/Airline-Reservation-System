@@ -9,7 +9,7 @@ per agency simulating the activities of that agency. When an agency thread is bo
 the other agency will do busy waiting.
 It is implemented using POSIX threads.
 
-## 2- Program Flow
+## 2 Program Flow and Explanation 
 #### 1- Global Initializations: 
 All the global variable initializations are made in this section for the two
 child threads and main to be able to access them including the matrix M, turn variable for busy waiting
@@ -45,4 +45,10 @@ Plan:
 After the capacity_full is true, child threads are joined to stop their implementation and
 whatever tasks that follow are only implemented by the main/parent thread. The statements which are
 given indicated that no seats are left, and M is looped over to print out the seating plan because loop
-won’t affect the global variable as only one thread is working
+won’t affect the global variable as only one thread is working.
+
+
+## 3 Note:
+
+The program was implemented as a part of coursework CS307: Operating Systems.For more details about the implementation refer to the pdf about the project implementation from the project folder.The comments in the code are numbered according to the section 2 above which aims to make following the code easier.
+
